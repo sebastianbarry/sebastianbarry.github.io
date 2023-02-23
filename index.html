@@ -6,51 +6,99 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
   <link rel="stylesheet" href='global.css'>
-<title>Sebastian Barry Portfolio</title>
+  <title>Sebastian Barry Portfolio</title>
 </head>
 
 <body>
+  <section class="__main large-section" style="text-align: center; padding: 5vh" id="main__section">
+    <div class="div__link" style="padding: 2vh">
+      <a class="div__link--title">Sebastian Barry</a>
+    </div>
+    <nav>
+      <a href="#work__top" class="nav__link">
+        <span class="nav__link--text" data-splitting>Work</span>
+        <span class="nav__link--text" data-splitting>Work</span>
+      </a>
+      <a href="#about__top" class="nav__link">
+        <span class="nav__link--text" data-splitting>About</span>
+        <span class="nav__link--text" data-splitting>About</span>
+      </a>
+      <a href="#contact__top" class="nav__link">
+        <span class="nav__link--text" data-splitting>Contact</span>
+        <span class="nav__link--text" data-splitting>Contact</span>
+      </a>
+      <a href="Resume - Sebastian Barry.pdf" class="nav__link">
+        <span class="nav__link--text" data-splitting>Resume</span>
+        <span class="nav__link--text" data-splitting>Resume</span>
+      </a>
+    </nav>
+  </section>
 
-<!--div class="nav__link" style="vertical-align: top;">
-  <a class="nav__link--text">Sebastian Barry</a>
-</div-->
-<div>
-  <div class="div__link">
-    <a class="div__link--text">Sebastian Barry</a>
+  <section id="work__top" class="return-top">
+    <div class="triangle return-top">
+      <a href="#main__section"><i style ="filter:drop-shadow(2px 2px 14px #292929)" class="fas fa-arrow-circle-up"></i></a>
+    </div>
+  </section>
+
+  <section id="work__section" class="large-section" style="padding: 2vh; color: azure; text-shadow: 2px 2px 14px #292929;">
+    <div id="work__title" style="display: flex;">
+      <div class="div__link">
+        <span>Work</span>
+      </div>
+    </div>
+    <div id="work__content" class="section-content">
+      <div id="work__1" class="work-item">NREL OpenPATH (Mobile app)</div>
+      <div id="work__2" class="work-item">Course Dragon</div>
+      <div id="work__3" class="work-item">This website</div>
+    </div>
+  </section>
+
+  <section id="about__top" class="return-top">
+    <div class="triangle return-top">
+      <a href="#main__section"><i style ="filter:drop-shadow(2px 2px 14px #292929)" class="fas fa-arrow-circle-up"></i></a>
+    </div>
+  </section>
+
+  <section id="about__section" class="large-section" style="padding: 2vh; color: azure; text-shadow: 2px 2px 14px #292929;">
+    <div id="about__title" style="display: flex;">
+      <div class="div__link">
+        <span>About</span>
+      </div>
+    </div>
+    <div id="about__content" class="section-content">
+      <img src="Images/Sebastian_B-1.jpg" alt="Headshot">
+      <div>Hello, my name is Sebastian Barry. I am a senior undergraduate student studying Computer Science! I love people and I love programming.</div>
+    </div>
+  </section>
+
+  <section id="contact__top" class="return-top">
+    <div class="triangle return-top">
+      <a href="#main__section"><i style ="filter:drop-shadow(2px 2px 14px #292929)" class="fas fa-arrow-circle-up"></i></a>
+    </div>
+  </section>
+
+  <section id="contact__section" class="large-section" style="padding: 2vh; color: azure; text-shadow: 2px 2px 14px #292929;">
+    <div id="contact__title" style="display: flex;">
+      <div class="div__link">
+        <span>Contact</span>
+      </div>
+    </div>
+    <div id="contact__content" class="section-content">
+      Sebastian Barry
+      <br>
+      <a href="mailto:sebbarry@comcast.net">E: sebbarry@comcast.net</a>
+      <a>P: +1 (303) 359-1966</a>
+    </div>
+  </section>
+
+
+  <div class="support">
+    <a href="https://github.com/sebastianbarry" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/in/sebastian-barry" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
-  <nav>
-    <a href="#" class="nav__link">
-      <span class="nav__link--text" data-splitting>Work</span>
-      <span class="nav__link--text" data-splitting>Work</span>
-    </a>
-    <a href="about.html" class="nav__link">
-      <span class="nav__link--text" data-splitting>About</span>
-      <span class="nav__link--text" data-splitting>About</span>
-    </a>
-    <a href="#" class="nav__link">
-      <span class="nav__link--text" data-splitting>Contact</span>
-      <span class="nav__link--text" data-splitting>Contact</span>
-    </a>
-    <a href="Resume - Sebastian Barry.pdf" class="nav__link">
-      <span class="nav__link--text" data-splitting>Resume</span>
-      <span class="nav__link--text" data-splitting>Resume</span>
-    </a>
-  </nav>
-</div>
 
-<section id="section1">
-  <h2>Section 1</h2>
-  <p>This is section 1 of the page.</p>
-</section>
-
-
-<div class="support">
-  <a href="https://github.com/sebastianbarry" target="_blank"><i class="fab fa-github-square"></i></a>
-  <a href="https://www.linkedin.com/in/sebastian-barry" target="_blank"><i class="fab fa-linkedin"></i></a>
-</div>
-
-<script type="text/javascript" src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
