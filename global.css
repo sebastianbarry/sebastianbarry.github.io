@@ -86,6 +86,7 @@ html {
   font-style: italic;
   margin-left: 15vh;
   text-shadow: -4px 3px 3px rgba(251, 0, 255, 0.54);
+  font-family: "Roboto";
 }
 
 #about__title {
@@ -94,6 +95,7 @@ html {
   font-style: italic;
   margin-left: 15vh;
   text-shadow: -4px 3px 3px rgba(0, 251, 255, 0.54);
+  font-family: "Roboto";
 }
 
 #contact__title {
@@ -102,6 +104,7 @@ html {
   font-style: italic;
   margin-left: 15vh;
   text-shadow: -4px 3px 3px rgba(136, 255, 0, 0.54);
+  font-family: "Roboto";
 }
 
 .triangle {
@@ -131,6 +134,8 @@ body {
   width: 100%;
   background: #000;
   color: white;
+  font-family: "Roboto";
+  font-size: 1.5rem;
 }
 
 section {
@@ -145,7 +150,7 @@ section {
 .section-content {
   display: flex;
   justify-content: center;
-  height: 75vh;
+  min-height: 75vh;
   padding: 3rem;
   padding-top: 2rem;
   color: rgb(202, 202, 202);
@@ -185,6 +190,11 @@ a:focus {
   display: grid;
   font-style: italic;
   justify-content: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
 }
 .div__link--text {
   grid-area: 1/1;
@@ -310,6 +320,11 @@ a:focus {
 }
 .support a:hover {
   transform: scale(1.1);
+}
+
+.headshot {
+  height: 400px;
+  width: 300px;
 }
 
 .return-top {
