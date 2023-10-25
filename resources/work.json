@@ -1,0 +1,84 @@
+{
+  "worklist": 
+  [
+    {
+      "projectName": "NREL OpenPATH",
+      "whatDidYouDo": "Open-source software for travel data collection",
+      "bannerImageURL": "Images/OpenPATH-dashboard-preview-en.png",
+      "oneSentenceDesc": "As the number of sustainable travel-data collection programs increses, we implemented countless user-requested and internal features to support the growing user base.",
+      "datesTimeline": "June 2022 - Present",
+      "technologies": [
+        "React",
+        "Python API",
+        "MongoDB"
+      ],
+      "tasks": [
+        "Face-to-face communication with users of the app to gather feedback",
+        "Redesigning and implementing a new *React* frontend version of the mobile app",
+        "Re-architecting the data model in the *Python API*",
+        "Cybersecurity: Anonymous login functionality using generated QR codes"
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/e-mission",
+          "icon": "fab fa-github"
+        },
+        {
+          "name": "NREL OpenPATH",
+          "url": "https://www.nrel.gov/transportation/openpath.html",
+          "icon": "fab fa-link"
+        }
+      ]
+    },
+    {
+      "projectName": "Trimble",
+      "whatDidYouDo": "UI Design / Differential Database Design",
+      "bannerImageURL": "Images/placeholder.png",
+      "oneSentenceDesc": "To support an exploding internal Knowledge Base, we designed a new search-bar based UI and database structure to support the new features.",
+      "datesTimeline": "June 2023 - August 2023",
+      "tasks": [
+        "Designing an intuitive design for a knowledge base document searching website",
+        "Automating a document check-out process using Google Apps Script/Javascript",
+        "Meeting with users of the knowledge base to generate project requirements",
+        "Applying a *Jira*-centered agile methodology in a small 3-4 person team"
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://www.google.com",
+          "icon": "fab fa-github"
+        },
+        {
+          "name": "OpenPATH",
+          "url": "https://www.google.com",
+          "icon": "fas fa-link"
+        }
+      ]
+    },
+    {
+      "projectName": "CourseDragon",
+      "whatDidYouDo": "Team Lead / Full Stack Developer",
+      "bannerImageURL": "images/placeholder.png",
+      "oneSentenceDesc": "To support an exploding internal Knowledge Base, we designed a new search-bar based UI and database structure to support the new features.",
+      "datesTimeline": "June 2023 - Present",
+      "tasks": [
+        "Task 1",
+        "Task 2",
+        "Task 3"
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://www.google.com",
+          "icon": "fab fa-github"
+        },
+        {
+          "name": "OpenPATH",
+          "url": "https://www.google.com",
+          "icon": "fas fa-link"
+        }
+      ]
+    }
+  ]
+}
