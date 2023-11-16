@@ -1,24 +1,44 @@
 <script>
-import NameTitle from './NameTitle.svelte';
+	import NameTitle from "./NameTitle.svelte";
+	import WorkSection from "./WorkSection.svelte";
+	import jsonData from "../../public/resources/work.json";
+	const workList = jsonData.worklist;
 </script>
 
-<section id="main__section">
+<section id="Title">
 	<NameTitle />
 	<p>Software Developer</p>
 	<ul>
-		<li>Work</li>
+		<li><a href="#work__top">Work</a></li>
 		<li>About</li>
 		<li>Contact</li>
-		<li>Resume</li>
+		<li>
+			<a href="/resources/Resume v4 - Sebastian Barry.pdf" target="_blank"
+				>Resume</a
+			>
+		</li>
 	</ul>
 </section>
+<a id="work__top" />
+{#each workList as workItem, i}
+	<WorkSection {workItem} {i} />
+{/each}
 
 <style>
-	section {
-		text-align: center;
+	#Title {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	ul {
+		list-style-type: none;
+		display: contents;
+	}
+
+	li {
 		padding: 1em;
-		min-width: 240px;
-		margin: 0 auto;
 	}
 
 	@media (min-width: 640px) {
