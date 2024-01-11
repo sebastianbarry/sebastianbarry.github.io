@@ -1,10 +1,9 @@
 <script>
-  import Home from "./components/Home.svelte";
   import { Route, Router, Link } from "svelte-routing";
   import NavBar from "./NavBar.svelte";
+  import Home from "./components/Home.svelte";
   import About from "./components/About.svelte";
   import Resume from "./components/Resume.svelte";
-  import { onMount } from "svelte";
 </script>
 
 <Router>

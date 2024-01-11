@@ -1,4 +1,10 @@
 <script>
+  import { onMount } from "svelte";
+  import { location } from "../stores/stores.js";
+
+  onMount(() => {
+    location.update((s) => "about");
+  });
 </script>
 
 <section id="Title">
@@ -6,7 +12,7 @@
     <div>
       <i class="fa fa-circle" style="color: blue" />
     </div>
-    <div>I'm Sebastian, softwared developer based in Denver</div>
+    <div>I'm Sebastian, software developer based in Denver</div>
   </div>
   <div>
     <p>

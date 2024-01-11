@@ -1,43 +1,48 @@
 <script>
   import { Route, Router, Link } from "svelte-routing";
   import { onMount } from "svelte";
+  import { location } from "./stores/stores.js";
 
-  // Script for sticky navbar
+  let locationValue = "";
   let isSticky = false;
   let navbarClass = "";
-  let route = "";
 
+  // Keep track of what route we are at
+  location.subscribe((value) => {
+    locationValue = value;
+    update();
+  });
+
+  // Create the event listener for displaying the navbar when scrolling down on the Home route
   onMount(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", update);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", update);
     };
   });
 
-  export function setRoute() {
-    route = window.location.pathname.split("/")[1];
-    console.log(route);
-    if (route == "about") {
-      isSticky = true;
-      navbarClass = "sticky";
-      return;
+  // See whether the navbar should be displayed or not
+  export function update() {
+    if (locationValue == "about" || locationValue == "resume") {
+      isSticky = true; // about page
+    } else {
+      const scrollPosition =
+        window.scrollY || document.documentElement.scrollTop;
+      if (scrollPosition >= 0.8 * window.innerHeight) {
+        isSticky = true; // home page but scrolled down
+      } else {
+        isSticky = false; // home page not scrolled down
+      }
     }
-  }
-
-  function handleScroll() {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    isSticky = scrollPosition >= 0.8 * window.innerHeight;
     navbarClass = isSticky ? "sticky" : "";
   }
-  // end script for sticky navbar
 </script>
 
 <nav id="navbar" class={navbarClass}>
   <Link to="/">Home</Link>
   <Link to="/about">About</Link>
   <Link to="/">Contact</Link>
-  <!-- <Link to="/resume">Resume</Link> -->
   <a href="/resources/Resume v4 - Sebastian Barry.pdf" target="_blank">Resume</a
   >
 </nav>

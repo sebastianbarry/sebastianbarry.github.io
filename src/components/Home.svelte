@@ -1,9 +1,16 @@
 <script>
+	import { onMount } from "svelte";
+	import { Link } from "svelte-routing";
+	import { location } from "../stores/stores.js";
 	import NameTitle from "./NameTitle.svelte";
 	import WorkSection from "./WorkSection.svelte";
 	import jsonData from "../../public/resources/work.json";
-	import { Link } from "svelte-routing";
+
 	const workList = jsonData.worklist;
+
+	onMount(() => {
+		location.update((s) => "home");
+	});
 </script>
 
 <section id="Title">
