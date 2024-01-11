@@ -1,185 +1,33 @@
-<!--Template from https://codemyui.com/displace-link-hover-animation-using-splittingjs/-->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastian Barry Portfolio</title>
+
+  <link rel='icon' type='image/png' href='./favicon.svg'>
+  <link rel='stylesheet' href='./global.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
-  <link rel="stylesheet" href='global.css'>
-  <title>Sebastian Barry Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <header class="sticky-header">
-    <nav>
-      <div class="left-items">
-        <a href="#work__top" onclick="changeTextColor(this)">Work</a>
-        <a href="#about__top" onclick="changeTextColor(this)">About</a>
-        <a href="#contact__top" onclick="changeTextColor(this)">Contact</a>
-        <a href="Resume v4 - Sebastian Barry.pdf" onclick="changeTextColor(this)">Resume</a>
-      </div>
-      <div class="right-items">
-        <a href="#main__section"><i style ="filter:drop-shadow(2px 2px 14px #292929);" class="return-top-button fas fa-arrow-circle-up"></i></a>
-      </div>
-    </nav>
-  </header>
-  <body>
-    <section class="__main large-section" style="text-align: center; padding: 5vh" id="main__section">
-      <div class="rotate-box">
-        <div class="div__link" style="padding: 2vh">
-          <a class="div__link--title gradient-title grow-text">Sebastian Barry</a>
-        </div>
-      </div>
-      <div class="rotate-box">
-        <nav>
-          <a href="#work__top" class="nav__link">
-            <span class="nav__link--text" data-splitting>Work</span>
-            <span class="nav__link--text" data-splitting>Work</span>
-          </a>
-          <a href="#about__top" class="nav__link">
-            <span class="nav__link--text" data-splitting>About</span>
-            <span class="nav__link--text" data-splitting>About</span>
-          </a>
-          <a href="#contact__top" class="nav__link">
-            <span class="nav__link--text" data-splitting>Contact</span>
-            <span class="nav__link--text" data-splitting>Contact</span>
-          </a>
-          <a href="Resume v4 - Sebastian Barry.pdf" class="nav__link">
-            <span class="nav__link--text" data-splitting>Resume</span>
-            <span class="nav__link--text" data-splitting>Resume</span>
-          </a>
-        </nav>
-      </div>
-    </section>
-
-    <section id="work__top" class="return-top">
-      <div class="triangle return-top">
-      </div>
-    </section>
-
-    <section id="work__section" class="large-section" style="padding: 2vh; color: azure; text-shadow: 2px 2px 14px #292929;">
-      <div id="work__title" style="display: flex;">
-        <div class="div__link">
-          <span>Work</span>
-        </div>
-      </div>
-      <div id="work__content" class="section-content">
-        <div class="card-container">
-          <a class="card" href="https://www.nrel.gov/transportation/openpath.html">
-            <img src="Images/OpenPATH-dashboard-preview-en.png" alt="Project 1">
-            <h3>Nrel OpenPATH</h3>
-            <p>Full Stack Intern!</p>
-          </a>
-          <a class="card" href="https://github.com/team-gt-ucd/course-dragon">
-            <img src="Images/CourseDragon.png" alt="Project 2">
-            <h3>CourseDragon</h3>
-            <p>Team Leader!</p>
-          </a>
-          <a class="card" href="https://github.com/sebastianbarry/sebastianbarry.github.io">
-            <img src="Images/SebastianBarryWebsite.png" alt="Project 3">
-            <h3>This Website</h3>
-            <p>Self-Made!</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="work__bottom" class="return-top">
-      <div class="top-triangle return-top">
-      </div>
-    </section>
-
-    <section id="about__top" class="return-top">
-      <div class="triangle return-top">      
-      </div>
-    </section>
-
-    <section id="about__section" class="large-section" style="padding: 2vh; color: azure; text-shadow: 2px 2px 14px #292929;">
-      <div id="about__title" style="display: flex;">
-        <div class="div__link">
-          <span>About</span>
-        </div>
-      </div>
-      <div id="about__content" class="section-content">
-        <img src="Images/Sebastian_B-1.jpg" alt="Headshot" class="headshot">
-        <div>
-          <p>
-            Welcome to my website! I'm Sebastian Barry, a senior undergraduate student studying Computer Science. It's great to have you here. Let me take a moment to introduce myself and share my genuine passion for software development.
-          </p>
-          <p>
-            Since I was young, I've been fascinated by technology and how it shapes our lives. As I dived into programming, I discovered a whole new world of creativity and problem-solving. It ignited a fire within me, and I knew I wanted to pursue a career in software development.
-          </p>
-          <p>
-            One thing that defines me is my energy and enthusiasm. I approach every project with excitement and a drive to make it the best it can be. Whether I'm creating an application from scratch or designing a user-friendly interface, I genuinely enjoy the process of bringing ideas to life. I pour my heart and soul into my work, paying attention to the smallest details.
-          </p>
-          <p>
-            Throughout my studies, I've worked hard to maintain excellent grades and expand my knowledge. I've gained a solid foundation in computer science principles, algorithms, and data structures. This knowledge helps me tackle complex problems and come up with innovative solutions.
-          </p>
-          <p>
-            But it's not just technical skills that matter to me. I believe that software development is ultimately about people. Understanding the needs and experiences of users is crucial to creating applications that truly serve them. I strive to listen carefully, empathize, and build interfaces that are not only visually appealing but also intuitive and user-friendly.
-          </p>
-          <p>
-            What sets me apart is my commitment to delivering high-quality software. I believe in writing clean, efficient code and following best practices. I stay up to date with the latest industry trends and constantly seek to improve my skills.
-          </p>
-          <p>
-            Beyond my studies, I actively engage in personal projects and contribute to open-source communities. These experiences have taught me the value of collaboration and teamwork. I believe that by working together, we can achieve great things and make a positive impact in the software development industry.
-          </p>
-          <p>
-            As you explore my website, I hope you get a sense of my genuine passion for programming and dedication to creating meaningful software. If you have any questions or exciting opportunities, I would be thrilled to hear from you. Let's connect and explore how we can push the boundaries of what's possible in the world of software development.
-          </p>
-          <p>
-            Thank you for visiting, and I look forward to connecting with you soon!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about__bottom" class="return-top">
-      <div class="top-triangle return-top">
-      </div>
-    </section>
-
-    <section id="contact__top" class="return-top">
-      <div class="triangle return-top">
-      </div>
-    </section>
-
-    <section id="contact__section" class="large-section" style="padding: 2vh; color: azure; text-shadow: 2px 2px 14px #292929;">
-      <div id="contact__title" style="display: flex;">
-        <div class="div__link">
-          <span>Contact</span>
-        </div>
-      </div>
-      <div id="contact__content" class="section-content">
-        <div>
-          Sebastian Barry
-        </div>
-        <div>
-          <br>
-          <a href="mailto:sebbarry@comcast.net">E: sebbarry@comcast.net</a>
-        </div>
-        <div>
-          <a>P: +1 (303) 359-1966</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact__bottom" class="return-top">
-      <div class="top-triangle return-top">
-      </div>
-    </section>
-
-  </body>
-
-  <footer>
-    <div class="support">
-      <a href="https://github.com/sebastianbarry" target="_blank"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/sebastian-barry" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>  
-  </footer>
-
-  <script type="text/javascript" src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
+
+<footer>
+  <div class="support">
+    <a href="https://github.com/sebastianbarry" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/in/sebastian-barry" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
 
 </html>
