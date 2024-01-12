@@ -1,13 +1,7 @@
 <script>
 </script>
 
-<div id="NameTitle" class="rotate-box">
-	<div class="div__link" style="padding: 2vh">
-		<p class="div__link--title gradient-title grow-text" style="margin: auto;">
-			Sebastian Barry
-		</p>
-	</div>
-</div>
+<div id="DescriptionTitle" class="rotate-box">Software Developer</div>
 
 <style>
 	div {
@@ -17,14 +11,13 @@
 
 	p {
 		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 2em;
 		font-weight: 100;
 	}
 	.rotate-box {
 		position: relative;
 		/*display: inline-block;*/
-		animation: rotate 5s ease-in-out infinite;
+		animation: rotate 4s ease-in-out infinite;
 	}
 	@keyframes rotate {
 		0% {
@@ -38,10 +31,10 @@
 		}
 	}
 	.div__link {
-		font-size: 5rem;
+		font-size: 2rem;
 		color: #fff;
 		display: grid;
-		/* font-style: italic; */
+		font-style: italic;
 		justify-content: center;
 		overflow: hidden;
 		display: -webkit-box;

@@ -1,4 +1,5 @@
 <script>
+  export let openOverlay;
   import { Route, Router, Link } from "svelte-routing";
   import { onMount } from "svelte";
   import { location } from "./stores/stores.js";
@@ -39,15 +40,30 @@
   }
 </script>
 
-<nav id="navbar" class={navbarClass}>
-  <Link to="/">Home</Link>
-  <Link to="/about">About</Link>
-  <Link to="/">Contact</Link>
-  <a href="/resources/Resume v4 - Sebastian Barry.pdf" target="_blank">Resume</a
-  >
-</nav>
+<header class="sticky-header">
+  <nav id="navbar" class={navbarClass}>
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+    <a on:click={openOverlay}>Contact</a>
+    <a href="/resources/Resume v4 - Sebastian Barry.pdf" target="_blank"
+      >Resume</a
+    >
+  </nav>
+</header>
 
 <style>
+  .sticky-header {
+    position: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: cyan;
+    font-size: 1.8rem;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: top 0.3s ease-in-out;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
