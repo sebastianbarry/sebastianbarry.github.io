@@ -60,6 +60,12 @@
 <WorkOverlay {workItem} bind:show={overlayVisible} on:close={closeOverlay} />
 
 <style>
+  section {
+    min-height: 90vh;
+    max-height: 150vh;
+    height: auto;
+  }
+
   div {
     display: inline-block;
     padding: 2vh;

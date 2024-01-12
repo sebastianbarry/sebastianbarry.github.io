@@ -30,7 +30,7 @@
     } else {
       const scrollPosition =
         window.scrollY || document.documentElement.scrollTop;
-      if (scrollPosition >= 0.8 * window.innerHeight) {
+      if (scrollPosition >= 0.85 * window.innerHeight) {
         isSticky = true; // home page but scrolled down
       } else {
         isSticky = false; // home page not scrolled down

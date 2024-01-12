@@ -13,6 +13,11 @@
 </footer>
 
 <style>
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+
   .support {
     position: absolute;
     right: 10px;
