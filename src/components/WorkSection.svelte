@@ -47,9 +47,9 @@
     </div>
     <div id="content-div">
       <p id="one-sentence-description">{oneSentenceDesc}</p>
-      <a id="open" on:click={openOverlay}
-        >Open <i class="fa fa-arrow-right" /></a
-      >
+      <div id="open">
+        <a on:click={openOverlay}>Open <i class="fa fa-arrow-right" /></a>
+      </div>
     </div>
   </div>
   <div id="bannerimage-div">
@@ -68,12 +68,35 @@
 
   div {
     display: inline-block;
-    padding: 2vh;
+    padding: 0 2vw;
   }
 
   hr {
     border: 6px solid grey;
     border-radius: 5px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
   }
 
   #top {
@@ -100,15 +123,15 @@
   }
 
   #company-desc {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   #dates-timeline {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   #content-div {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 
   #one-sentence-description {
@@ -116,17 +139,18 @@
 
   #open {
     font-size: 1em;
+    margin: 1em 0;
   }
 
   #bannerimage-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36vh;
+    min-height: 36vh;
+    margin: 0 0 2em 0;
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    height: 50vh;
   }
 </style>

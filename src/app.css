@@ -23,7 +23,7 @@ html {
 }
 
 #app {
-  width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -44,10 +44,11 @@ a {
   color: aqua;
   text-decoration: inherit;
   font-weight: 500;
+  transition: all 150ms ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 a:visited {}

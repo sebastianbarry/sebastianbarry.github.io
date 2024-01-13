@@ -9,7 +9,7 @@
 	#DescriptionTitle {
 		max-height: 8vh;
 		padding: 0 0 4vh 0;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.rotate-box {

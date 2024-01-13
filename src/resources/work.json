@@ -3,19 +3,22 @@
     {
       "projectName": "NREL OpenPATH",
       "whatDidYouDo": "Full-Stack Software Development / Data Analysis",
-      "bannerImageURL": "images/OpenPATH-dashboard-preview-en.png",
+      "bannerImageURL": "images/NREL OpenPATH banner image.png",
       "oneSentenceDesc": "As the number of sustainable travel-data collection programs increses, we implemented countless user-requested and internal features to support the growing user base.",
       "datesTimeline": "June 2022 - Present",
       "technologies": [
-        "React",
+        "React Native",
+        "Angular JS",
+        "Mobile Development",
         "Python API",
         "MongoDB"
       ],
       "tasks": [
-        "Face-to-face communication with users of the app to gather feedback",
-        "Redesigning and implementing a new *React* frontend version of the mobile app",
-        "Re-architecting the data model in the *Python API*",
-        "Cybersecurity: Anonymous login functionality using generated QR codes"
+        "Analyzed project requirements and user requests through self-led face-to-face stakeholder meetings.",
+        "Resolved over 20 front/back-end issues through pull requests, testing, and detailed/documented collaboration.",
+        "Restructured the data model in a highly-complex travel-data analysis pipeline server.",
+        "Rewrote a pre-existing Angular JS frontend, to a React Native version of the mobile app.",
+        "Implemented secured anonymous authentication using uniquely and randomly generated QR codes."
       ],
       "links": [
         {
@@ -26,65 +29,63 @@
         {
           "name": "NREL OpenPATH",
           "url": "https://www.nrel.gov/transportation/openpath.html",
-          "icon": "fab fa-link"
+          "icon": "fas fa-link"
         }
       ]
     },
     {
       "projectName": "Trimble",
       "whatDidYouDo": "UI Design / Differential Database Design",
-      "bannerImageURL": "images/pink_city.png",
+      "bannerImageURL": "images/Trimble banner image.png",
       "oneSentenceDesc": "To support an expanding internal Knowledge Base, we designed a new search-bar based UI and database structure to support the new features.",
       "datesTimeline": "June 2023 - August 2023",
       "technologies": [
         "Google Apps Script",
+        "Database Design",
         "Jira"
       ],
       "tasks": [
-        "Designing an intuitive design for a knowledge base document searching website",
-        "Automating a document check-out process using Google Apps Script/Javascript",
-        "Meeting with users of the knowledge base to generate project requirements",
-        "Applying a *Jira*-centered agile methodology in a small 3-4 person team"
+        "Implemented a highly efficient differential/incremental database load script using Google Apps Script/Javascript.",
+        "Analyzed requirements and user needs through self-led stakeholder meetings.",
+        "Designed an intuitive user experience for a knowledge base document searching website.",
+        "Applied a Jira-centered agile methodology in a small 3-4 person team."
       ],
       "links": [
         {
           "name": "GitHub",
-          "url": "https://www.google.com",
+          "url": "https://github.com/sebastianbarry/google-drive-to-spreadsheet",
           "icon": "fab fa-github"
         },
         {
-          "name": "OpenPATH",
-          "url": "https://www.google.com",
+          "name": "Trimble",
+          "url": "https://www.trimble.com/",
           "icon": "fas fa-link"
         }
       ]
     },
     {
-      "projectName": "CourseDragon",
+      "projectName": "Course Dragon",
       "whatDidYouDo": "Team Lead / Full Stack Developer",
-      "bannerImageURL": "images/CourseDragon.png",
-      "oneSentenceDesc": "A widely used web app made by students for students, to visualize their course schedules and plan their future semesters.",
-      "datesTimeline": "June 2023 - Present",
+      "bannerImageURL": "images/Course Dragon banner image.png",
+      "oneSentenceDesc": "A web app used widely among CU Denver undergrad students in 2022, made by students for students, to visualize their course schedules and plan their future semesters.",
+      "datesTimeline": "August 2021 - May 2022",
       "technologies": [
         "React",
         "Node JS",
-        "MongoDB"
+        "MongoDB",
+        "Red Hat Linux Server",
+        "Amazon Web Services"
       ],
       "tasks": [
-        "Task 1",
-        "Task 2",
-        "Task 3"
+        "Spearheaded a 4 person team making effective use of design patterns and project management tools.",
+        "Analyzed requirements and advisor/student needs through self-led stakeholder meetings.",
+        "Designed and developed a web application that garnered widespread positive adoption among classmates."
       ],
       "links": [
         {
           "name": "GitHub",
-          "url": "https://www.google.com",
+          "url": "https://github.com/team-gt-ucd/course-dragon",
           "icon": "fab fa-github"
-        },
-        {
-          "name": "OpenPATH",
-          "url": "https://www.google.com",
-          "icon": "fas fa-link"
         }
       ]
     }

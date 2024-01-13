@@ -59,6 +59,16 @@
             <li>{task}</li>
           {/each}
         </div>
+        <div id="links">
+          {#each workItem.links as link}
+            <a href={link.url} target="_blank" class="link">
+              <button>
+                <i class={link.icon}></i>
+                <p>{link.name}</p>
+              </button>
+            </a>
+          {/each}
+        </div>
       </div>
       <!-- End content -->
     </div>
@@ -78,7 +88,7 @@
     justify-content: center;
     align-items: center;
     z-index: -1;
-    font-size: 1.5em;
+    font-size: 1.2em;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     font-family: "Inter", sans-serif;
@@ -119,22 +129,49 @@
   #content {
     display: inline-block;
     width: 100%;
-    height: 100%;
+    max-height: 90%;
     text-align: left;
   }
 
   #technologies {
     display: inline-block;
     width: 100%;
-    height: fit-content;
+    height: auto;
   }
 
   #tasks {
     display: grid;
     width: 100%;
-    height: 70%;
-    align-content: center;
+    height: auto;
+    align-content: baseline;
     line-height: 2em;
+  }
+
+  #links {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    line-height: 2em;
+  }
+
+  .link {
+    width: fit-content;
+    margin: 0 1em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    margin: 0 10px;
+  }
+
+  i {
+    font-size: 1.5em;
   }
 
   hr {
@@ -152,5 +189,29 @@
     left: 10vh;
     cursor: pointer;
     font-size: 3em;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .overlay {
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .overlay {
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .overlay {
+      font-size: 0.6em;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .overlay {
+      font-size: 0.5em;
+    }
   }
 </style>

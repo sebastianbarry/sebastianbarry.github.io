@@ -19,7 +19,7 @@
 <section id="Home">
 	<NameTitle />
 	<DescriptionTitle />
-	<div id="Links" class="arotate-box">
+	<div id="Links" class="rotate-box">
 		<nav>
 			<a href="#Work" class="nav__link">
 				<span class="nav__link--text" data-splitting>Work</span>
@@ -29,7 +29,7 @@
 				<span class="nav__link--text" data-splitting>About</span>
 				<span class="nav__link--text" data-splitting>About</span>
 			</a>
-			<a href="#0" on:click={openOverlay} class="nav__link">
+			<a on:click={openOverlay} class="nav__link">
 				<span class="nav__link--text" data-splitting>Contact</span>
 				<span class="nav__link--text" data-splitting>Contact</span>
 			</a>
@@ -59,7 +59,7 @@
 
 	.rotate-box {
 		position: relative;
-		animation: rotate 4s ease-in-out infinite;
+		animation: rotate 6s ease-in-out infinite;
 	}
 
 	@keyframes rotate {
@@ -97,12 +97,13 @@
 	}
 
 	.nav__link {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		color: #fff;
 		display: grid;
 		font-style: italic;
 		justify-content: center;
 		margin: 2vh 0;
+		cursor: pointer;
 	}
 	.nav__link--text {
 		grid-area: 1/1;
