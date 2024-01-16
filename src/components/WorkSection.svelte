@@ -140,6 +140,7 @@
   #open {
     font-size: 1em;
     margin: 1em 0;
+    font-family: "Montserrat", sans-serif;
   }
 
   #bannerimage-div {

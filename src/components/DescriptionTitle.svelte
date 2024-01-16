@@ -10,6 +10,7 @@
 		max-height: 8vh;
 		padding: 0 0 4vh 0;
 		font-size: 1.5rem;
+		font-family: "Inter", sans-serif;
 	}
 
 	.rotate-box {

@@ -45,7 +45,25 @@
       <!-- Content -->
       <div id="title">Contact</div>
       <hr />
-      <div id="content">Contact me!</div>
+      <div id="content">
+        <p>Email: Sebbarry@comcast.net</p>
+        <p>
+          Linkedin: <a href="https://www.linkedin.com/in/sebastian-barry/"
+            >https://www.linkedin.com/in/sebastian-barry/</a
+          >
+        </p>
+        <p>
+          Resume: <a
+            href="https://sebastianbarry.github.io/resources/Resume%20v4%20-%20Sebastian%20Barry.pdf"
+            >https://sebastianbarry.github.io/resources/Resume%20v4%20-%20Sebastian%20Barry.pdf</a
+          >
+        </p>
+        <p>
+          GitHub: <a href="https://github.com/sebastianbarry/"
+            >https://github.com/sebastianbarry/</a
+          >
+        </p>
+      </div>
       <!-- End content -->
     </div>
   </div>
@@ -100,6 +118,7 @@
   #title {
     font-size: 2em;
     font-weight: bold;
+    font-family: "roboto", sans-serif;
   }
 
   #content {

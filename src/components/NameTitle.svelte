@@ -79,4 +79,28 @@
 			background-position: 0 0;
 		}
 	}
+
+	@media screen and (max-width: 1024px) {
+		.title {
+			font-size: 1em;
+		}
+	}
+
+	@media screen and (max-width: 950px) {
+		.title {
+			font-size: 0.8em;
+		}
+	}
+
+	@media screen and (max-width: 650px) {
+		.title {
+			font-size: 0.6em;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.title {
+			font-size: 0.5em;
+		}
+	}
 </style>
