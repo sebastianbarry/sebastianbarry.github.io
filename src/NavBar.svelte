@@ -72,6 +72,7 @@
       >Resume</a
     > -->
   </nav>
+  <div id="fade-bar"></div>
 </header>
 
 <style>
@@ -122,7 +123,7 @@
   }
 
   .nav__link {
-    font-size: 1.7rem;
+    font-size: 3.5vw;
     color: #fff;
     display: grid;
     font-style: italic;
@@ -175,5 +176,72 @@
   }
   .nav__link:hover .nav__link--text:nth-child(2) {
     transform: rotate3d(0, 0, 0, 90deg);
+  }
+
+  #fade-bar {
+    height: 10px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+    width: 100%;
+    position: fixed;
+    top: 5.5vw;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .nav__link {
+      font-size: 3.5vw;
+    }
+    #fade-bar {
+      top: 6vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .nav__link {
+      font-size: 3.5vw;
+    }
+    #fade-bar {
+      top: 6.5vw;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .nav__link {
+      font-size: 4.5vw;
+    }
+    #fade-bar {
+      top: 8.4vw;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .nav__link {
+      font-size: 5.5vw;
+    }
+    #fade-bar {
+      top: 8vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .nav__link {
+      font-size: 6.5vw;
+    }
+    #fade-bar {
+      top: 13.5vw;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .nav__link {
+      font-size: 6.5vw;
+    }
+    #fade-bar {
+      top: 15vw;
+    }
   }
 </style>

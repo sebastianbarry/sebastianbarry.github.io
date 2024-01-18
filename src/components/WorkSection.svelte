@@ -61,9 +61,15 @@
 
 <style>
   section {
-    min-height: 90vh;
+    min-height: 50vh;
     max-height: 150vh;
     height: auto;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
   }
 
   div {
@@ -106,40 +112,41 @@
     justify-content: space-between;
     align-items: flex-end;
     text-align: left;
+    overflow: hidden;
   }
 
   #icon-div {
     align-self: flex-start;
-    margin-top: 2.5em;
+    padding-top: 7vh;
+    height: 100%;
   }
 
   #company-name-div {
-    min-width: 20em;
+    min-width: 40%;
+    max-width: 100%;
   }
 
   #project-name {
-    font-size: 2em;
+    font-size: 3vw;
     font-weight: bold;
   }
 
   #company-desc {
-    font-size: 1.2em;
+    font-size: 1.5vw;
   }
 
   #dates-timeline {
-    font-size: 1.2em;
+    font-size: 2vw;
   }
 
   #content-div {
-    font-size: 1.1em;
-  }
-
-  #one-sentence-description {
+    font-size: 1.5vw;
+    padding: 0 4vw;
   }
 
   #open {
-    font-size: 1em;
-    margin: 1em 0;
+    font-size: 2vw;
+    margin: 2vh 0;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -148,10 +155,79 @@
     justify-content: center;
     align-items: center;
     min-height: 36vh;
-    margin: 0 0 2em 0;
+    margin-bottom: 4vh;
   }
 
   img {
-    height: 50vh;
+    width: 80vw;
+  }
+
+  @media screen and (max-width: 950px) {
+    hr {
+      border: 4px solid grey;
+    }
+
+    #icon-div {
+      display: none;
+    }
+
+    #project-name {
+      font-size: 4vw;
+    }
+
+    #company-desc {
+      font-size: 2vw;
+    }
+
+    #dates-timeline {
+      font-size: 1.5vw;
+    }
+
+    #content-div {
+      font-size: 2vw;
+    }
+
+    #open {
+      font-size: 2.5vw;
+    }
+
+    #bannerimage-div {
+      min-height: 10vh;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    hr {
+      border: 4px solid grey;
+    }
+
+    #top {
+      display: block;
+      text-align: center;
+    }
+
+    #project-name {
+      font-size: 8vw;
+    }
+
+    #company-desc {
+      font-size: 5vw;
+    }
+
+    #dates-timeline {
+      font-size: 4vw;
+    }
+
+    #content-div {
+      font-size: 3.5vw;
+    }
+
+    #open {
+      font-size: 4vw;
+    }
+
+    #bannerimage-div {
+      min-height: 10vh;
+    }
   }
 </style>

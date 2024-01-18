@@ -10,6 +10,7 @@
 <style>
 	#NameTitle {
 		min-height: 20vh;
+		max-height: 25hv;
 		padding: 8vh 0 0 0;
 	}
 	.rotate-box {
@@ -53,10 +54,10 @@
 	}
 
 	.grow-text {
-		animation: grow 8s ease-in-out infinite;
+		animation: grow-big 8s ease-in-out infinite;
 	}
 
-	@keyframes grow {
+	@keyframes grow-big {
 		0% {
 			font-size: 5.1rem;
 			transform: scale(1);
@@ -80,27 +81,75 @@
 		}
 	}
 
+	@keyframes grow-small {
+		0% {
+			font-size: 3.4rem;
+			transform: scale(1);
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 1em;
+		}
+		50% {
+			font-size: 3.5rem;
+			transform: scale(1.1);
+			background-position: 0 0;
+		}
+		75% {
+			background-position: 0 1em;
+		}
+		100% {
+			font-size: 3.4rem;
+			transform: scale(1);
+			background-position: 0 0;
+		}
+	}
+
+	@keyframes grow-smaller {
+		0% {
+			font-size: 2.4rem;
+			transform: scale(1);
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 1em;
+		}
+		50% {
+			font-size: 2.5rem;
+			transform: scale(1.1);
+			background-position: 0 0;
+		}
+		75% {
+			background-position: 0 1em;
+		}
+		100% {
+			font-size: 2.4rem;
+			transform: scale(1);
+			background-position: 0 0;
+		}
+	}
+
 	@media screen and (max-width: 1024px) {
-		.title {
-			font-size: 1em;
+		.grow-text {
+			animation: grow-big 8s ease-in-out infinite;
 		}
 	}
 
 	@media screen and (max-width: 950px) {
-		.title {
-			font-size: 0.8em;
+		.grow-text {
+			animation: grow-big 8s ease-in-out infinite;
 		}
 	}
 
 	@media screen and (max-width: 650px) {
-		.title {
-			font-size: 0.6em;
+		.grow-text {
+			animation: grow-small 8s ease-in-out infinite;
 		}
 	}
 
 	@media screen and (max-width: 480px) {
-		.title {
-			font-size: 0.5em;
+		.grow-text {
+			animation: grow-smaller 8s ease-in-out infinite;
 		}
 	}
 </style>

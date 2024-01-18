@@ -36,11 +36,19 @@
 
 {#if show}
   <!-- svelte-ignore a11y-click-events-have-key-events -->
-  <div class="overlay {overlayClass}" on:click={handleClick}>
+  <div
+    class="overlay {overlayClass}"
+    on:click={handleClick}
+    role="overlay"
+    aria-roledescription="overlay"
+  >
     <div class="popup" on:click={(e) => e.stopPropagation()}>
       <!-- Close button -->
-      <span class="close-btn" on:click={handleClick}
-        ><i class="fa fa-times" /></span
+      <span
+        class="close-btn"
+        on:click={handleClick}
+        role="close"
+        aria-label="close"><i class="fa fa-times" /></span
       >
       <!-- Content -->
       <div id="title">Contact</div>
@@ -157,5 +165,24 @@
     left: 10vh;
     cursor: pointer;
     font-size: 3em;
+  }
+
+  @media screen and (max-width: 950px) {
+    .overlay {
+      font-size: 3vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .overlay {
+      font-size: 6vw;
+    }
+    #content {
+      overflow-wrap: anywhere;
+    }
+    .close-btn {
+      font-size: 2em;
+      left: 7vw;
+    }
   }
 </style>

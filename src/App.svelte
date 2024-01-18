@@ -20,6 +20,7 @@
 <Router>
   <main>
     <NavBar {openOverlay} />
+    <div id="fade-bar"></div>
     <Route path="/">
       <Home {openOverlay} />
     </Route>
@@ -34,6 +35,19 @@
   main {
     text-align: center;
     font-family: "Roboto";
+  }
+
+  #fade-bar {
+    height: 10px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
   }
 
   @media (min-width: 640px) {
